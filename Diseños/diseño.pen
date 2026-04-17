@@ -1,0 +1,3573 @@
+{
+  "version": "2.11",
+  "children": [
+    {
+      "type": "frame",
+      "id": "UVOi7",
+      "x": 0,
+      "y": 0,
+      "name": "Landing Page",
+      "width": 1440,
+      "fill": "$surface",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "omBkR",
+          "name": "Navigation",
+          "width": "fill_container",
+          "height": 80,
+          "padding": [
+            0,
+            120
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "QnP1h",
+              "name": "logo",
+              "fill": "$brand",
+              "content": "Vitalis",
+              "fontFamily": "$font_heading",
+              "fontSize": 24,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "kusCt",
+              "name": "navLinks",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "5oaU7",
+                  "fill": "$text_primary",
+                  "content": "Médicos",
+                  "fontFamily": "$font_body",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "jjERa",
+                  "fill": "$text_primary",
+                  "content": "Especialidades",
+                  "fontFamily": "$font_body",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "7sGsZ",
+                  "name": "newB2BBtn",
+                  "fill": "$cta",
+                  "cornerRadius": 100,
+                  "padding": [
+                    8,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "2vXts",
+                      "fill": "$surface",
+                      "content": "Soy Profesional",
+                      "fontFamily": "$font_body",
+                      "fontSize": 14,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Tf9mz",
+          "name": "Hero Premium",
+          "clip": true,
+          "width": "fill_container",
+          "height": 800,
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Mn33T",
+              "x": 0,
+              "y": 0,
+              "name": "bgImage",
+              "metadata": {
+                "type": "unsplash",
+                "username": "brookebalentine",
+                "link": "https://unsplash.com/@brookebalentine",
+                "author": "Brooke Balentine"
+              },
+              "width": 1440,
+              "height": 800,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1776384527640.png",
+                "mode": "fill"
+              }
+            },
+            {
+              "type": "rectangle",
+              "id": "DmGKO",
+              "x": 0,
+              "y": 0,
+              "name": "overlay",
+              "opacity": 0.85,
+              "fill": "$brand",
+              "width": 1440,
+              "height": 800
+            },
+            {
+              "type": "frame",
+              "id": "t5LSN",
+              "x": 0,
+              "y": 0,
+              "name": "content",
+              "width": 1440,
+              "height": 800,
+              "layout": "vertical",
+              "gap": 32,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "wT8ju",
+                  "name": "badge",
+                  "fill": "#ffffff26",
+                  "cornerRadius": 100,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#ffffff4d"
+                  },
+                  "effect": {
+                    "type": "background_blur",
+                    "radius": 12
+                  },
+                  "padding": [
+                    8,
+                    24
+                  ],
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "10yHL",
+                      "width": 16,
+                      "height": 16,
+                      "iconFontName": "shield-check",
+                      "iconFontFamily": "lucide",
+                      "fill": "$surface"
+                    },
+                    {
+                      "type": "text",
+                      "id": "VU2Rr",
+                      "fill": "$surface",
+                      "content": "El buscador de salud #1 de Comodoro",
+                      "fontFamily": "$font_body",
+                      "fontSize": 14,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "e8iAe",
+                  "fill": "$surface",
+                  "content": "Encontrá tu especialista.\nAl instante.",
+                  "textAlign": "center",
+                  "fontFamily": "$font_heading",
+                  "fontSize": 64,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "frame",
+                  "id": "yaCIJ",
+                  "name": "sBox",
+                  "fill": "#ffffff26",
+                  "cornerRadius": 16,
+                  "effect": {
+                    "type": "background_blur",
+                    "radius": 24
+                  },
+                  "gap": 16,
+                  "padding": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "zTeye",
+                      "name": "inputF_box",
+                      "width": 640,
+                      "height": 64,
+                      "fill": "$surface",
+                      "cornerRadius": 12,
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#0000001a",
+                        "offset": {
+                          "x": 0,
+                          "y": 8
+                        },
+                        "blur": 16
+                      },
+                      "gap": 16,
+                      "padding": [
+                        0,
+                        24
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "i3maA",
+                          "width": 24,
+                          "height": 24,
+                          "iconFontName": "search",
+                          "iconFontFamily": "lucide",
+                          "fill": "$text_muted"
+                        },
+                        {
+                          "type": "text",
+                          "id": "EXYRV",
+                          "fill": "$text_muted",
+                          "content": "Especialidad, clínica o médico...",
+                          "fontFamily": "$font_body",
+                          "fontSize": 18,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "yyJZe",
+                      "name": "btnSearch_box",
+                      "height": 64,
+                      "fill": "$cta",
+                      "cornerRadius": 12,
+                      "padding": [
+                        0,
+                        40
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "B5TZx",
+                          "fill": "$surface",
+                          "content": "Buscar Médico",
+                          "fontFamily": "$font_body",
+                          "fontSize": 18,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "Jy87I",
+                  "fill": "#ffffffcc",
+                  "content": "Búsquedas frecuentes: Pediatría · Cardiología · Odontología",
+                  "fontFamily": "$font_body",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "JNTsj",
+          "name": "How It Works",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            80,
+            120
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "FwzMK",
+              "name": "title1",
+              "fill": "$brand",
+              "content": "Cómo funciona",
+              "fontFamily": "$font_heading",
+              "fontSize": 40,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "7C8zX",
+              "name": "stepsRow",
+              "width": "fill_container",
+              "gap": 32,
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "oIDCv",
+                  "name": "step1",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "YPBBb",
+                      "name": "icon1Box",
+                      "width": 64,
+                      "height": 64,
+                      "fill": "$bg_light",
+                      "cornerRadius": 32,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "qzLLS",
+                          "width": 24,
+                          "height": 24,
+                          "iconFontName": "search",
+                          "iconFontFamily": "lucide",
+                          "fill": "$cta"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "ivlVl",
+                      "fill": "$text_primary",
+                      "content": "1. Buscá tu especialista",
+                      "fontFamily": "$font_heading",
+                      "fontSize": 20,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "DFRnq",
+                      "fill": "$text_secondary",
+                      "textGrowth": "fixed-width",
+                      "width": 300,
+                      "content": "Encontrá al profesional adecuado cerca tuyo por especialidad o nombre.",
+                      "textAlign": "center",
+                      "fontFamily": "$font_body",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "1m5eB",
+                  "name": "step2",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ZcvT3",
+                      "name": "icon2Box",
+                      "width": 64,
+                      "height": 64,
+                      "fill": "$bg_light",
+                      "cornerRadius": 32,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "sck6s",
+                          "width": 24,
+                          "height": 24,
+                          "iconFontName": "user",
+                          "iconFontFamily": "lucide",
+                          "fill": "$cta"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "OwWuE",
+                      "fill": "$text_primary",
+                      "content": "2. Revisá su perfil",
+                      "fontFamily": "$font_heading",
+                      "fontSize": 20,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "mUVsP",
+                      "fill": "$text_secondary",
+                      "textGrowth": "fixed-width",
+                      "width": 300,
+                      "content": "Consultá su experiencia, horarios disponibles y opiniones de pacientes.",
+                      "textAlign": "center",
+                      "fontFamily": "$font_body",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "C4uKM",
+                  "name": "step3",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "6VCRB",
+                      "name": "icon3Box",
+                      "width": 64,
+                      "height": 64,
+                      "fill": "$bg_light",
+                      "cornerRadius": 32,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "t1kw8",
+                          "width": 24,
+                          "height": 24,
+                          "iconFontName": "calendar-plus",
+                          "iconFontFamily": "lucide",
+                          "fill": "$cta"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "nk6Yn",
+                      "fill": "$text_primary",
+                      "content": "3. Reservá tu turno",
+                      "fontFamily": "$font_heading",
+                      "fontSize": 20,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "SGU2l",
+                      "fill": "$text_secondary",
+                      "textGrowth": "fixed-width",
+                      "width": 300,
+                      "content": "Sin llamados ni esperas. Elegí el horario que más te convenga y listo.",
+                      "textAlign": "center",
+                      "fontFamily": "$font_body",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "05BPq",
+          "name": "Especialidades",
+          "width": "fill_container",
+          "fill": "$bg_light",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            80,
+            120
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "ZBVfM",
+              "name": "title2",
+              "fill": "$brand",
+              "content": "Especialidades Destacadas",
+              "fontFamily": "$font_heading",
+              "fontSize": 32,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "3I868",
+              "name": "specRow",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "GqkTQ",
+                  "name": "card1",
+                  "width": "fill_container",
+                  "fill": "$surface",
+                  "cornerRadius": 12,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0000000d",
+                    "offset": {
+                      "x": 0,
+                      "y": 2
+                    },
+                    "blur": 10
+                  },
+                  "gap": 16,
+                  "padding": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "2NmW4",
+                      "width": 24,
+                      "height": 24,
+                      "iconFontName": "heart",
+                      "iconFontFamily": "lucide",
+                      "fill": "$cta"
+                    },
+                    {
+                      "type": "text",
+                      "id": "UyUCo",
+                      "fill": "$text_primary",
+                      "content": "Cardiología",
+                      "fontFamily": "$font_body",
+                      "fontSize": 16,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "VCj02",
+                  "name": "card2",
+                  "width": "fill_container",
+                  "fill": "$surface",
+                  "cornerRadius": 12,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0000000d",
+                    "offset": {
+                      "x": 0,
+                      "y": 2
+                    },
+                    "blur": 10
+                  },
+                  "gap": 16,
+                  "padding": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "NVv9c",
+                      "width": 24,
+                      "height": 24,
+                      "iconFontName": "heart",
+                      "iconFontFamily": "lucide",
+                      "fill": "$cta"
+                    },
+                    {
+                      "type": "text",
+                      "id": "D0stH",
+                      "fill": "$text_primary",
+                      "content": "Cardiología",
+                      "fontFamily": "$font_body",
+                      "fontSize": 16,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "0EREv",
+                  "name": "card3",
+                  "width": "fill_container",
+                  "fill": "$surface",
+                  "cornerRadius": 12,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0000000d",
+                    "offset": {
+                      "x": 0,
+                      "y": 2
+                    },
+                    "blur": 10
+                  },
+                  "gap": 16,
+                  "padding": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "yySrv",
+                      "width": 24,
+                      "height": 24,
+                      "iconFontName": "heart",
+                      "iconFontFamily": "lucide",
+                      "fill": "$cta"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ZsFJo",
+                      "fill": "$text_primary",
+                      "content": "Cardiología",
+                      "fontFamily": "$font_body",
+                      "fontSize": 16,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "U8YJA",
+                  "name": "card4",
+                  "width": "fill_container",
+                  "fill": "$surface",
+                  "cornerRadius": 12,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0000000d",
+                    "offset": {
+                      "x": 0,
+                      "y": 2
+                    },
+                    "blur": 10
+                  },
+                  "gap": 16,
+                  "padding": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "3X77e",
+                      "width": 24,
+                      "height": 24,
+                      "iconFontName": "heart",
+                      "iconFontFamily": "lucide",
+                      "fill": "$cta"
+                    },
+                    {
+                      "type": "text",
+                      "id": "RYKk3",
+                      "fill": "$text_primary",
+                      "content": "Cardiología",
+                      "fontFamily": "$font_body",
+                      "fontSize": 16,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "P2YfX",
+          "name": "Doctors",
+          "width": "fill_container",
+          "fill": "$surface",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            80,
+            120
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "vkTqE",
+              "fill": "$brand",
+              "content": "Médicos Recomendados",
+              "fontFamily": "$font_heading",
+              "fontSize": 32,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "W9Qrv",
+              "name": "docsRow",
+              "width": "fill_container",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "vxg1F",
+                  "name": "docCard1",
+                  "width": "fill_container",
+                  "fill": "$surface",
+                  "cornerRadius": 16,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$bg_border"
+                  },
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0000000f",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 16
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "UWKPQ",
+                      "name": "dImg",
+                      "clip": true,
+                      "width": 80,
+                      "height": 80,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1776383086207.png",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 40
+                    },
+                    {
+                      "type": "text",
+                      "id": "zG45r",
+                      "fill": "$brand",
+                      "content": "Dr. Martín López",
+                      "fontFamily": "$font_heading",
+                      "fontSize": 20,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "05dbL",
+                      "fill": "$cta",
+                      "content": "Cardiólogo",
+                      "fontFamily": "$font_body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "EL9qe",
+                      "name": "dBtn",
+                      "width": "fill_container",
+                      "fill": "$cta",
+                      "cornerRadius": 8,
+                      "padding": [
+                        12,
+                        16
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "MNxON",
+                          "fill": "$surface",
+                          "content": "Reservar Turno",
+                          "fontFamily": "$font_body",
+                          "fontSize": 14,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "1qMYV",
+                  "name": "docCard2",
+                  "width": "fill_container",
+                  "fill": "$surface",
+                  "cornerRadius": 16,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$bg_border"
+                  },
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0000000f",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 16
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "2f2UO",
+                      "name": "dImg",
+                      "clip": true,
+                      "width": 80,
+                      "height": 80,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1776383086207.png",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 40
+                    },
+                    {
+                      "type": "text",
+                      "id": "abN53",
+                      "fill": "$brand",
+                      "content": "Dr. Martín López",
+                      "fontFamily": "$font_heading",
+                      "fontSize": 20,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "I1DXj",
+                      "fill": "$cta",
+                      "content": "Cardiólogo",
+                      "fontFamily": "$font_body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Fbl7m",
+                      "name": "dBtn",
+                      "width": "fill_container",
+                      "fill": "$cta",
+                      "cornerRadius": 8,
+                      "padding": [
+                        12,
+                        16
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "S8Fxg",
+                          "fill": "$surface",
+                          "content": "Reservar Turno",
+                          "fontFamily": "$font_body",
+                          "fontSize": 14,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "BpwlX",
+                  "name": "docCard3",
+                  "width": "fill_container",
+                  "fill": "$surface",
+                  "cornerRadius": 16,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$bg_border"
+                  },
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0000000f",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 16
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "1iRah",
+                      "name": "dImg",
+                      "clip": true,
+                      "width": 80,
+                      "height": 80,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1776383086207.png",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 40
+                    },
+                    {
+                      "type": "text",
+                      "id": "CCrzX",
+                      "fill": "$brand",
+                      "content": "Dr. Martín López",
+                      "fontFamily": "$font_heading",
+                      "fontSize": 20,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "hThXa",
+                      "fill": "$cta",
+                      "content": "Cardiólogo",
+                      "fontFamily": "$font_body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "wmBQw",
+                      "name": "dBtn",
+                      "width": "fill_container",
+                      "fill": "$cta",
+                      "cornerRadius": 8,
+                      "padding": [
+                        12,
+                        16
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "G7Ppj",
+                          "fill": "$surface",
+                          "content": "Reservar Turno",
+                          "fontFamily": "$font_body",
+                          "fontSize": 14,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "m3zoq",
+              "name": "adBanner1",
+              "metadata": {
+                "type": "unsplash",
+                "username": "dulhiier",
+                "link": "https://unsplash.com/@dulhiier",
+                "author": "Nastya Dulhiier"
+              },
+              "clip": true,
+              "width": "fill_container",
+              "height": 140,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1549477881-1a8180c72ac8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzYzODUxNTN8&ixlib=rb-4.1.0&q=80&w=1080",
+                "mode": "fill"
+              },
+              "cornerRadius": 16
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "d18Ia",
+          "name": "Para Medicos B2B",
+          "width": "fill_container",
+          "fill": "$brand",
+          "gap": 64,
+          "padding": [
+            80,
+            120
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "c5HTQ",
+              "name": "b2bLeft",
+              "clip": true,
+              "width": "fill_container",
+              "height": 400,
+              "fill": "$surface",
+              "cornerRadius": 16,
+              "layout": "vertical",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "lZ3A9",
+                  "fill": "$text_muted",
+                  "content": "[Dashboard Mockup]",
+                  "fontFamily": "$font_heading",
+                  "fontSize": 24,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Gar3M",
+              "name": "b2bRight",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "g2hxf",
+                  "fill": "$surface",
+                  "textGrowth": "fixed-width",
+                  "width": 500,
+                  "content": "Llevá tu consultorio al siguiente nivel",
+                  "fontFamily": "$font_heading",
+                  "fontSize": 40,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "8NK9S",
+                  "fill": "#ffffffcc",
+                  "content": "• Más visibilidad en Comodoro\n• Turnos automáticos 24/7\n• Conexión con Google Calendar",
+                  "lineHeight": 1.8,
+                  "fontFamily": "$font_body",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "OT0me",
+                  "name": "b2bBtn",
+                  "fill": "$cta",
+                  "cornerRadius": 8,
+                  "padding": [
+                    16,
+                    32
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "8uRqQ",
+                      "fill": "$surface",
+                      "content": "Registrá tu consultorio gratis",
+                      "fontFamily": "$font_body",
+                      "fontSize": 16,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Pjld4",
+          "name": "Pricing",
+          "width": "fill_container",
+          "fill": "$bg_light",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            80,
+            120
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "Ga1LC",
+              "fill": "$brand",
+              "content": "Planes pensados para vos",
+              "fontFamily": "$font_heading",
+              "fontSize": 32,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "UHVKD",
+              "name": "pRow",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "MIv1i",
+                  "name": "pFree",
+                  "width": 320,
+                  "fill": "$surface",
+                  "cornerRadius": 16,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$bg_border"
+                  },
+                  "layout": "vertical",
+                  "gap": 24,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "hoxLH",
+                      "fill": "$brand",
+                      "content": "Plan Gratis",
+                      "fontFamily": "$font_heading",
+                      "fontSize": 24,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Pmxud",
+                      "fill": "$text_secondary",
+                      "content": "Perfil público profesional y aparición en búsquedas.",
+                      "fontFamily": "$font_body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Dw07Z",
+                      "fill": "$brand",
+                      "content": "$0 / mes",
+                      "fontFamily": "$font_heading",
+                      "fontSize": 32,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "drt5F",
+                  "name": "pPremium",
+                  "width": 320,
+                  "fill": "$surface",
+                  "cornerRadius": 16,
+                  "stroke": {
+                    "thickness": 3,
+                    "fill": "$cta"
+                  },
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0000001a",
+                    "offset": {
+                      "x": 0,
+                      "y": 8
+                    },
+                    "blur": 24
+                  },
+                  "layout": "vertical",
+                  "gap": 24,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "hstRj",
+                      "fill": "$cta",
+                      "content": "Plan Premium",
+                      "fontFamily": "$font_heading",
+                      "fontSize": 24,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "4Gg4u",
+                      "fill": "$text_secondary",
+                      "content": "Todas las ventajas + turnos online, WhatsApp y más.",
+                      "fontFamily": "$font_body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "oekmO",
+                      "fill": "$brand",
+                      "content": "$15 / mes",
+                      "fontFamily": "$font_heading",
+                      "fontSize": 32,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "lgGsO",
+          "name": "Testimonios",
+          "width": "fill_container",
+          "fill": "$surface",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            80,
+            120
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "JjoTY",
+              "fill": "$brand",
+              "content": "Lo que dicen nuestros pacientes",
+              "fontFamily": "$font_heading",
+              "fontSize": 32,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "OQ7CI",
+              "name": "tRow",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Aln0M",
+                  "name": "t1",
+                  "width": 400,
+                  "fill": "$bg_light",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 24,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "CzCyD",
+                      "fill": "$text_secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "“Por fin una forma fácil de conseguir turno. Me ahorró horas de llamadas telefónicas y esperas. 10/10.”",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font_body",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "pGwZD",
+                      "name": "t1user",
+                      "gap": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Yl4h7",
+                          "width": 48,
+                          "height": 48,
+                          "fill": "$text_muted",
+                          "cornerRadius": 24
+                        },
+                        {
+                          "type": "frame",
+                          "id": "C1bJI",
+                          "name": "t1name",
+                          "layout": "vertical",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "ntr73",
+                              "fill": "$text_primary",
+                              "content": "María Fernández",
+                              "fontFamily": "$font_heading",
+                              "fontSize": 16,
+                              "fontWeight": "bold"
+                            },
+                            {
+                              "type": "text",
+                              "id": "CNDRu",
+                              "fill": "$text_secondary",
+                              "content": "Paciente en Rada Tilly",
+                              "fontFamily": "$font_body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ru6RB",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "$brand",
+          "padding": [
+            64,
+            120
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "yfqS2",
+              "name": "fLeft",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "yA6pi",
+                  "fill": "$surface",
+                  "content": "Vitalis",
+                  "fontFamily": "$font_heading",
+                  "fontSize": 24,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "LjmXk",
+                  "fill": "#ffffffb3",
+                  "content": "Directorio Médico de Comodoro Rivadavia.\nPróximamente en San Juan.",
+                  "fontFamily": "$font_body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "MnDe3",
+      "x": 3189,
+      "y": 0,
+      "name": "Perfil Medico",
+      "width": 1440,
+      "fill": "$bg_light",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "MPloo",
+          "name": "navCopy",
+          "width": "fill_container",
+          "height": 80,
+          "padding": [
+            0,
+            120
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "vLdTJ",
+              "name": "logo",
+              "fill": "$brand",
+              "content": "Vitalis",
+              "fontFamily": "$font_heading",
+              "fontSize": 24,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "Upwy5",
+              "name": "navLinks",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "RQm4t",
+                  "fill": "$text_primary",
+                  "content": "Médicos",
+                  "fontFamily": "$font_body",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "Q4isx",
+                  "fill": "$text_primary",
+                  "content": "Especialidades",
+                  "fontFamily": "$font_body",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "r2l7A",
+                  "name": "newB2BBtn",
+                  "fill": "$cta",
+                  "cornerRadius": 100,
+                  "padding": [
+                    8,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "9Ga3U",
+                      "fill": "$surface",
+                      "content": "Soy Profesional",
+                      "fontFamily": "$font_body",
+                      "fontSize": 14,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "a2BwN",
+          "name": "contentRow",
+          "width": "fill_container",
+          "gap": 40,
+          "padding": [
+            40,
+            120
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "rhJHB",
+              "name": "leftCol",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 40,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ALkhS",
+                  "name": "docHeader",
+                  "gap": 24,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "S9uce",
+                      "name": "pImg",
+                      "clip": true,
+                      "width": 120,
+                      "height": 120,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1776383155809.png",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 60
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dtxW6",
+                      "name": "hInfo",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Dpaob",
+                          "name": "hRow",
+                          "gap": 12,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "6lyvd",
+                              "fill": "$text_primary",
+                              "content": "Dra. Laura Gómez",
+                              "fontFamily": "$font_heading",
+                              "fontSize": 32,
+                              "fontWeight": "bold"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "LtxSN",
+                              "name": "badge",
+                              "fill": "$cta",
+                              "cornerRadius": 100,
+                              "gap": 4,
+                              "padding": [
+                                4,
+                                8
+                              ],
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon_font",
+                                  "id": "PtKbl",
+                                  "width": 14,
+                                  "height": 14,
+                                  "iconFontName": "check",
+                                  "iconFontFamily": "lucide",
+                                  "fill": "$surface"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "jblU2",
+                                  "fill": "$surface",
+                                  "content": "Verificada",
+                                  "fontFamily": "$font_body",
+                                  "fontSize": 12,
+                                  "fontWeight": "bold"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "bW0sc",
+                          "fill": "$text_secondary",
+                          "content": "Pediatría General",
+                          "fontFamily": "$font_body",
+                          "fontSize": 18,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "1OW02",
+                          "fill": "#F59E0B",
+                          "content": "⭐ 4.9 (120 opiniones)",
+                          "fontFamily": "$font_body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "zTLVI",
+                      "name": "bWpp",
+                      "fill": "$surface",
+                      "cornerRadius": 100,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$cta"
+                      },
+                      "gap": 8,
+                      "padding": [
+                        12,
+                        24
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "NB1e4",
+                          "width": 18,
+                          "height": 18,
+                          "iconFontName": "message-circle",
+                          "iconFontFamily": "lucide",
+                          "fill": "$cta"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ABJkC",
+                          "fill": "$cta",
+                          "content": "WhatsApp",
+                          "fontFamily": "$font_body",
+                          "fontSize": 14,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "QqNHb",
+                  "name": "aboutSec",
+                  "width": "fill_container",
+                  "fill": "$surface",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "IH1If",
+                      "fill": "$text_primary",
+                      "content": "Sobre mí",
+                      "fontFamily": "$font_heading",
+                      "fontSize": 24,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "o8YNq",
+                      "fill": "$text_secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Especialista en Pediatría con más de 10 años de experiencia cuidando la salud de los más pequeños en Comodoro Rivadavia. Atención integral y personalizada.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font_body",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "VZ0dX",
+                  "name": "mapSec",
+                  "width": "fill_container",
+                  "fill": "$surface",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ygQin",
+                      "fill": "$text_primary",
+                      "content": "Consultorio",
+                      "fontFamily": "$font_heading",
+                      "fontSize": 24,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "SQHsh",
+                      "fill": "$text_secondary",
+                      "content": "San Martín 1234, Centro, Comodoro Rivadavia",
+                      "fontFamily": "$font_body",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "5Rcbw",
+                      "name": "mapImg",
+                      "clip": true,
+                      "width": "fill_container",
+                      "height": 200,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1776383162921.png",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 12
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "8aAob",
+              "name": "rightCol",
+              "width": 400,
+              "fill": "$surface",
+              "cornerRadius": 16,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#00000014",
+                "offset": {
+                  "x": 0,
+                  "y": 8
+                },
+                "blur": 24
+              },
+              "layout": "vertical",
+              "gap": 24,
+              "padding": 32,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "8CO1n",
+                  "fill": "$brand",
+                  "content": "Reservar Turno",
+                  "fontFamily": "$font_heading",
+                  "fontSize": 24,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "k2eku",
+                  "fill": "$text_secondary",
+                  "content": "Seleccioná día y horario",
+                  "fontFamily": "$font_body",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "xMpdG",
+                  "name": "calWidget",
+                  "width": "fill_container",
+                  "height": 280,
+                  "fill": "$bg_light",
+                  "cornerRadius": 12,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "gPoCU",
+                      "width": 48,
+                      "height": 48,
+                      "iconFontName": "calendar",
+                      "iconFontFamily": "lucide",
+                      "fill": "$text_muted"
+                    },
+                    {
+                      "type": "text",
+                      "id": "NaCjN",
+                      "fill": "$text_muted",
+                      "content": "[Componente Calendario]",
+                      "fontFamily": "$font_body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ezT7E",
+                  "name": "slotsGrid",
+                  "width": "fill_container",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Z6dFI",
+                      "name": "s1",
+                      "width": "fill_container",
+                      "fill": "$surface",
+                      "cornerRadius": 8,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$cta"
+                      },
+                      "padding": [
+                        8,
+                        16
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "isJUx",
+                          "fill": "$cta",
+                          "content": "09:00",
+                          "fontFamily": "$font_body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "eXtVa",
+                      "name": "s2",
+                      "width": "fill_container",
+                      "fill": "$surface",
+                      "cornerRadius": 8,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$cta"
+                      },
+                      "padding": [
+                        8,
+                        16
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ezLUz",
+                          "fill": "$cta",
+                          "content": "09:30",
+                          "fontFamily": "$font_body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "unzcF",
+                      "name": "s3",
+                      "width": "fill_container",
+                      "fill": "$cta",
+                      "cornerRadius": 8,
+                      "padding": [
+                        8,
+                        16
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ikSL3",
+                          "fill": "$surface",
+                          "content": "10:00",
+                          "fontFamily": "$font_body",
+                          "fontSize": 14,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "Zokjq",
+                  "name": "formTitle",
+                  "fill": "$text_primary",
+                  "content": "Completá tus datos",
+                  "fontFamily": "$font_heading",
+                  "fontSize": 18,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "frame",
+                  "id": "leLmW",
+                  "name": "formCol",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "KGuf8",
+                      "name": "f1",
+                      "width": "fill_container",
+                      "fill": "$surface",
+                      "cornerRadius": 8,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$bg_border"
+                      },
+                      "padding": [
+                        12,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "eGK6i",
+                          "fill": "$text_muted",
+                          "content": "Nombre completo",
+                          "fontFamily": "$font_body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "v7Xzx",
+                      "name": "f2",
+                      "width": "fill_container",
+                      "fill": "$surface",
+                      "cornerRadius": 8,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$bg_border"
+                      },
+                      "padding": [
+                        12,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "FEHLO",
+                          "fill": "$text_muted",
+                          "content": "Email",
+                          "fontFamily": "$font_body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "xiU15",
+                      "name": "f3",
+                      "width": "fill_container",
+                      "fill": "$surface",
+                      "cornerRadius": 8,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$bg_border"
+                      },
+                      "padding": [
+                        12,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "TbMIV",
+                          "fill": "$text_muted",
+                          "content": "Motivo de consulta (opcional)",
+                          "fontFamily": "$font_body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "APTtq",
+                  "name": "submitBtn",
+                  "width": "fill_container",
+                  "fill": "$cta",
+                  "cornerRadius": 8,
+                  "padding": [
+                    16,
+                    32
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "5cbZS",
+                      "fill": "$surface",
+                      "content": "Confirmar Turno",
+                      "fontFamily": "$font_body",
+                      "fontSize": 16,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "3wuoG",
+          "name": "fPerf",
+          "width": "fill_container",
+          "fill": "$brand",
+          "padding": [
+            64,
+            120
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "RH8bm",
+              "name": "fLeft",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "jxWsC",
+                  "fill": "$surface",
+                  "content": "Vitalis",
+                  "fontFamily": "$font_heading",
+                  "fontSize": 24,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "vhKXy",
+                  "fill": "#ffffffb3",
+                  "content": "Directorio Médico de Comodoro Rivadavia.\nPróximamente en San Juan.",
+                  "fontFamily": "$font_body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "J1umr",
+      "x": 4789,
+      "y": 0,
+      "name": "Dashboard Medico",
+      "width": 1440,
+      "height": 800,
+      "fill": "$bg_light",
+      "children": [
+        {
+          "type": "frame",
+          "id": "Yj5Pl",
+          "name": "sidebar",
+          "width": 260,
+          "height": "fill_container",
+          "fill": "$brand",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": 32,
+          "children": [
+            {
+              "type": "text",
+              "id": "CfCKc",
+              "name": "logo",
+              "fill": "$surface",
+              "content": "Vitalis",
+              "fontFamily": "$font_heading",
+              "fontSize": 24,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "UWOdu",
+              "name": "menu",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ZJtdQ",
+                  "name": "m1",
+                  "width": "fill_container",
+                  "fill": "#ffffff1a",
+                  "cornerRadius": 8,
+                  "gap": 12,
+                  "padding": [
+                    12,
+                    16
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "yXLrE",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "home",
+                      "iconFontFamily": "lucide",
+                      "fill": "$surface"
+                    },
+                    {
+                      "type": "text",
+                      "id": "VPPvR",
+                      "fill": "$surface",
+                      "content": "Inicio",
+                      "fontFamily": "$font_body",
+                      "fontSize": 16,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Ct49s",
+                  "name": "m2",
+                  "width": "fill_container",
+                  "gap": 12,
+                  "padding": [
+                    12,
+                    16
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "gz4vH",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "user",
+                      "iconFontFamily": "lucide",
+                      "fill": "#ffffff99"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ainyH",
+                      "fill": "#ffffff99",
+                      "content": "Mi Perfil",
+                      "fontFamily": "$font_body",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "fLPWm",
+                  "name": "m3",
+                  "width": "fill_container",
+                  "gap": 12,
+                  "padding": [
+                    12,
+                    16
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "3De1y",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "calendar",
+                      "iconFontFamily": "lucide",
+                      "fill": "#ffffff99"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Ttm2C",
+                      "fill": "#ffffff99",
+                      "content": "Turnos",
+                      "fontFamily": "$font_body",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "89mYD",
+          "name": "contentArea",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            48,
+            64
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "gIeRp",
+              "name": "headerRow",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ZtOM3",
+                  "fill": "$text_primary",
+                  "content": "¡Hola, Dra. Gómez!",
+                  "fontFamily": "$font_heading",
+                  "fontSize": 32,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "frame",
+                  "id": "hY0IW",
+                  "name": "calCon",
+                  "fill": "#00c8961a",
+                  "cornerRadius": 100,
+                  "gap": 8,
+                  "padding": [
+                    8,
+                    16
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "wxUtA",
+                      "width": 16,
+                      "height": 16,
+                      "iconFontName": "check-circle",
+                      "iconFontFamily": "lucide",
+                      "fill": "$cta"
+                    },
+                    {
+                      "type": "text",
+                      "id": "rIAzV",
+                      "fill": "$cta",
+                      "content": "Google Calendar conectado",
+                      "fontFamily": "$font_body",
+                      "fontSize": 14,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Jisx2",
+              "name": "metrics",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "8asy4",
+                  "name": "c1",
+                  "width": "fill_container",
+                  "fill": "$surface",
+                  "cornerRadius": 16,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0000000a",
+                    "offset": {
+                      "x": 0,
+                      "y": 2
+                    },
+                    "blur": 8
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "HEMDj",
+                      "fill": "$text_secondary",
+                      "content": "Turnos Hoy",
+                      "fontFamily": "$font_body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "uM9rQ",
+                      "fill": "$text_primary",
+                      "content": "8",
+                      "fontFamily": "$font_heading",
+                      "fontSize": 32,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Iksd1",
+                  "name": "c2",
+                  "width": "fill_container",
+                  "fill": "$surface",
+                  "cornerRadius": 16,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0000000a",
+                    "offset": {
+                      "x": 0,
+                      "y": 2
+                    },
+                    "blur": 8
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "cb4Gy",
+                      "fill": "$text_secondary",
+                      "content": "Visitas al perfil (Mes)",
+                      "fontFamily": "$font_body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "gFreY",
+                      "fill": "$text_primary",
+                      "content": "142",
+                      "fontFamily": "$font_heading",
+                      "fontSize": 32,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "F6T5P",
+                  "name": "c3",
+                  "width": "fill_container",
+                  "fill": "$surface",
+                  "cornerRadius": 16,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0000000a",
+                    "offset": {
+                      "x": 0,
+                      "y": 2
+                    },
+                    "blur": 8
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "5246k",
+                      "fill": "$text_secondary",
+                      "content": "Perfil completado",
+                      "fontFamily": "$font_body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "j0pEt",
+                      "width": "fill_container",
+                      "height": 8,
+                      "fill": "$bg_light",
+                      "cornerRadius": 4
+                    },
+                    {
+                      "type": "text",
+                      "id": "timgJ",
+                      "fill": "$cta",
+                      "content": "80% (Falta agregar fotos)",
+                      "fontFamily": "$font_body",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "NrqRU",
+      "x": 1575,
+      "y": 0,
+      "name": "Resultados Busqueda",
+      "width": 1440,
+      "fill": "$surface",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "qk2N7",
+          "name": "rNav",
+          "width": "fill_container",
+          "height": 80,
+          "padding": [
+            0,
+            120
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "L40J0",
+              "name": "logo",
+              "fill": "$brand",
+              "content": "Vitalis",
+              "fontFamily": "$font_heading",
+              "fontSize": 24,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "on9du",
+              "name": "navLinks",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "2w7Tt",
+                  "fill": "$text_primary",
+                  "content": "Médicos",
+                  "fontFamily": "$font_body",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "IBNXn",
+                  "fill": "$text_primary",
+                  "content": "Especialidades",
+                  "fontFamily": "$font_body",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "lRGBd",
+                  "name": "newB2BBtn",
+                  "fill": "$cta",
+                  "cornerRadius": 100,
+                  "padding": [
+                    8,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "rXzGJ",
+                      "fill": "$surface",
+                      "content": "Soy Profesional",
+                      "fontFamily": "$font_body",
+                      "fontSize": 14,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "4aof5",
+          "name": "rBody",
+          "width": 1440,
+          "gap": 48,
+          "padding": [
+            40,
+            120
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "y8Pdn",
+              "name": "rSidebar",
+              "width": 317,
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "00ei5",
+                  "fill": "$text_primary",
+                  "content": "Filtros",
+                  "fontFamily": "$font_heading",
+                  "fontSize": 24,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "frame",
+                  "id": "v4Tbu",
+                  "name": "fGroup",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "H2sHv",
+                      "name": "fSec1",
+                      "layout": "vertical",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "yEH3n",
+                          "fill": "$text_primary",
+                          "content": "Obra Social / Prepaga",
+                          "fontFamily": "$font_body",
+                          "fontSize": 16,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "UqTCu",
+                          "name": "fk1",
+                          "gap": 12,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "rvEL6",
+                              "width": 20,
+                              "height": 20,
+                              "cornerRadius": 4,
+                              "stroke": {
+                                "thickness": 1,
+                                "fill": "$bg_border"
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "id": "VBZCq",
+                              "fill": "$text_secondary",
+                              "content": "OSDE",
+                              "fontFamily": "$font_body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "YyvSU",
+                          "name": "fk2",
+                          "gap": 12,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "vCzS9",
+                              "width": 20,
+                              "height": 20,
+                              "cornerRadius": 4,
+                              "stroke": {
+                                "thickness": 1,
+                                "fill": "$bg_border"
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "id": "q7d00",
+                              "fill": "$text_secondary",
+                              "content": "Swiss Medical",
+                              "fontFamily": "$font_body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "u7tUt",
+                          "name": "fk3",
+                          "gap": 12,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "rmQnD",
+                              "width": 20,
+                              "height": 20,
+                              "fill": "$cta",
+                              "cornerRadius": 4
+                            },
+                            {
+                              "type": "text",
+                              "id": "h6i1q",
+                              "fill": "$surface",
+                              "content": "Particular",
+                              "fontFamily": "$font_body",
+                              "fontSize": 14,
+                              "fontWeight": "bold"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "guWOs",
+                      "name": "fSec2",
+                      "layout": "vertical",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "icviG",
+                          "fill": "$text_primary",
+                          "content": "Disponibilidad",
+                          "fontFamily": "$font_body",
+                          "fontSize": 16,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "ox5kB",
+                          "name": "fk4",
+                          "gap": 12,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "kMHnw",
+                              "width": 20,
+                              "height": 20,
+                              "cornerRadius": 4,
+                              "stroke": {
+                                "thickness": 1,
+                                "fill": "$bg_border"
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "id": "IHSyx",
+                              "fill": "$text_secondary",
+                              "content": "Turnos Online",
+                              "fontFamily": "$font_body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "F7V3x",
+                  "name": "sbAd",
+                  "metadata": {
+                    "type": "unsplash",
+                    "username": "nci",
+                    "link": "https://unsplash.com/@nci",
+                    "author": "National Cancer Institute"
+                  },
+                  "clip": true,
+                  "width": 320,
+                  "height": 480,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1776386159216.png",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 12,
+                  "layout": "vertical"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "IfjG1",
+              "name": "rMain",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Fl9Sq",
+                  "fill": "$brand",
+                  "content": "15 resultados para 'Pediatria'",
+                  "fontFamily": "$font_heading",
+                  "fontSize": 32,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "frame",
+                  "id": "6BCSi",
+                  "name": "rCard1",
+                  "width": "fill_container",
+                  "fill": "$surface",
+                  "cornerRadius": 16,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$bg_border"
+                  },
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0000000d",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 12
+                  },
+                  "gap": 24,
+                  "padding": 24,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "WzyHO",
+                      "name": "rcImg",
+                      "clip": true,
+                      "width": 100,
+                      "height": 100,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1776385168324.png",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 50
+                    },
+                    {
+                      "type": "frame",
+                      "id": "oqXGV",
+                      "name": "rcInfo",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "iZ6n0",
+                          "fill": "$brand",
+                          "content": "Dra. Laura Gomez",
+                          "fontFamily": "$font_heading",
+                          "fontSize": 24,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "fmCOq",
+                          "fill": "$text_secondary",
+                          "content": "Pediatria General",
+                          "fontFamily": "$font_body",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "33nD6",
+                          "fill": "$text_muted",
+                          "content": "Centro, Comodoro Rivadavia",
+                          "fontFamily": "$font_body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "oHZ2I",
+                      "name": "rcAction",
+                      "width": 200,
+                      "layout": "vertical",
+                      "gap": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "FluQS",
+                          "fill": "#F59E0B",
+                          "content": "4.9 Estrellas (120)",
+                          "fontFamily": "$font_body",
+                          "fontSize": 14,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Ue04k",
+                          "name": "btnR",
+                          "width": "fill_container",
+                          "fill": "$cta",
+                          "cornerRadius": 8,
+                          "padding": [
+                            12,
+                            24
+                          ],
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "76upU",
+                              "fill": "$surface",
+                              "content": "Ver Perfil",
+                              "fontFamily": "$font_body",
+                              "fontSize": 14,
+                              "fontWeight": "bold"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "EwKI1",
+                  "name": "rCard2",
+                  "width": "fill_container",
+                  "fill": "$surface",
+                  "cornerRadius": 16,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$bg_border"
+                  },
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0000000d",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 12
+                  },
+                  "gap": 24,
+                  "padding": 24,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "8fehT",
+                      "name": "rcImg2",
+                      "clip": true,
+                      "width": 100,
+                      "height": 100,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1776385200445.png",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 50
+                    },
+                    {
+                      "type": "frame",
+                      "id": "KOWbL",
+                      "name": "rcInfo2",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "RvvPg",
+                          "fill": "$brand",
+                          "content": "Dr. Martín López",
+                          "fontFamily": "$font_heading",
+                          "fontSize": 24,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "HV1PU",
+                          "fill": "$text_secondary",
+                          "content": "Cardiólogo",
+                          "fontFamily": "$font_body",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "dqnix",
+                          "fill": "$text_muted",
+                          "content": "Rada Tilly",
+                          "fontFamily": "$font_body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "YJNjb",
+                      "name": "rcAction2",
+                      "width": 200,
+                      "layout": "vertical",
+                      "gap": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "MwOgT",
+                          "fill": "#F59E0B",
+                          "content": "4.7 Estrellas (84)",
+                          "fontFamily": "$font_body",
+                          "fontSize": 14,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "MWGXW",
+                          "name": "btnR2",
+                          "width": "fill_container",
+                          "fill": "$cta",
+                          "cornerRadius": 8,
+                          "padding": [
+                            12,
+                            24
+                          ],
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "VRrFP",
+                              "fill": "$surface",
+                              "content": "Ver Perfil",
+                              "fontFamily": "$font_body",
+                              "fontSize": 14,
+                              "fontWeight": "bold"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "jK2D0",
+                  "name": "midAd",
+                  "metadata": {
+                    "type": "unsplash",
+                    "username": "nci",
+                    "link": "https://unsplash.com/@nci",
+                    "author": "National Cancer Institute"
+                  },
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 140,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "https://images.unsplash.com/photo-1582719299074-be127353065f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzYzODUxNzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 12
+                },
+                {
+                  "type": "frame",
+                  "id": "rQ1Lf",
+                  "name": "rCard3",
+                  "width": "fill_container",
+                  "fill": "$surface",
+                  "cornerRadius": 16,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$bg_border"
+                  },
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0000000d",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 12
+                  },
+                  "gap": 24,
+                  "padding": 24,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "r3CVg",
+                      "name": "rcImg3",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "ebengech",
+                        "link": "https://unsplash.com/@ebengech",
+                        "author": "Eben Kassaye"
+                      },
+                      "clip": true,
+                      "width": 100,
+                      "height": 100,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1643297654386-e7882651ce69?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzYzODYyMTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 50
+                    },
+                    {
+                      "type": "frame",
+                      "id": "EZ8Ke",
+                      "name": "rcInfo3",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "1IhG8",
+                          "fill": "$brand",
+                          "content": "Dra. Sofia Ruiz",
+                          "fontFamily": "$font_heading",
+                          "fontSize": 24,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "aBrvb",
+                          "fill": "$text_secondary",
+                          "content": "Dermatología",
+                          "fontFamily": "$font_body",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "7ZnhV",
+                          "fill": "$text_muted",
+                          "content": "Roca 120, C. Rivadavia",
+                          "fontFamily": "$font_body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "hy7Zi",
+                      "name": "rcAction3",
+                      "width": 200,
+                      "layout": "vertical",
+                      "gap": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "GII4z",
+                          "fill": "#F59E0B",
+                          "content": "4.9 Estrellas (156)",
+                          "fontFamily": "$font_body",
+                          "fontSize": 14,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "uxyxS",
+                          "name": "btnR3",
+                          "width": "fill_container",
+                          "fill": "$cta",
+                          "cornerRadius": 8,
+                          "padding": [
+                            12,
+                            24
+                          ],
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "jgTPd",
+                              "fill": "$surface",
+                              "content": "Ver Perfil",
+                              "fontFamily": "$font_body",
+                              "fontSize": 14,
+                              "fontWeight": "bold"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "8mlRO",
+                  "name": "rCard4",
+                  "width": "fill_container",
+                  "fill": "$surface",
+                  "cornerRadius": 16,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$bg_border"
+                  },
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0000000d",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 12
+                  },
+                  "gap": 24,
+                  "padding": 24,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "pLUP5",
+                      "name": "rcImg4",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "geppi",
+                        "link": "https://unsplash.com/@geppi",
+                        "author": "Giuseppe Argenziano"
+                      },
+                      "clip": true,
+                      "width": 100,
+                      "height": 100,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1583868907070-9e70bfb5e7c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzYzODYyMTd8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 50
+                    },
+                    {
+                      "type": "frame",
+                      "id": "K1nDS",
+                      "name": "rcInfo4",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "gFxjT",
+                          "fill": "$brand",
+                          "content": "Dr. Carlos Mentasti",
+                          "fontFamily": "$font_heading",
+                          "fontSize": 24,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "rOD3m",
+                          "fill": "$text_secondary",
+                          "content": "Traumatología",
+                          "fontFamily": "$font_body",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "HiRsu",
+                          "fill": "$text_muted",
+                          "content": "San Martín 450",
+                          "fontFamily": "$font_body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "7EaG4",
+                      "name": "rcAction4",
+                      "width": 200,
+                      "layout": "vertical",
+                      "gap": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "nQKet",
+                          "fill": "#F59E0B",
+                          "content": "4.5 Estrellas (42)",
+                          "fontFamily": "$font_body",
+                          "fontSize": 14,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "6m5EG",
+                          "name": "btnR4",
+                          "width": "fill_container",
+                          "fill": "$cta",
+                          "cornerRadius": 8,
+                          "padding": [
+                            12,
+                            24
+                          ],
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "YszeK",
+                              "fill": "$surface",
+                              "content": "Ver Perfil",
+                              "fontFamily": "$font_body",
+                              "fontSize": 14,
+                              "fontWeight": "bold"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "KeAGF",
+                  "name": "rCard5",
+                  "width": "fill_container",
+                  "fill": "$surface",
+                  "cornerRadius": 16,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$bg_border"
+                  },
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0000000d",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 12
+                  },
+                  "gap": 24,
+                  "padding": 24,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "jiE7c",
+                      "name": "rcImg5",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "tonywang7",
+                        "link": "https://unsplash.com/@tonywang7",
+                        "author": "Naitian（Tony） Wang"
+                      },
+                      "clip": true,
+                      "width": 100,
+                      "height": 100,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1566663972955-25cacaa61e38?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzYzODYyMTd8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 50
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Pfhuv",
+                      "name": "rcInfo5",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Qrl5c",
+                          "fill": "$brand",
+                          "content": "Dra. Ana Vallejos",
+                          "fontFamily": "$font_heading",
+                          "fontSize": 24,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "QzVue",
+                          "fill": "$text_secondary",
+                          "content": "Ginecología",
+                          "fontFamily": "$font_body",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "b5v3j",
+                          "fill": "$text_muted",
+                          "content": "Km 3, C. Rivadavia",
+                          "fontFamily": "$font_body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "VyXUR",
+                      "name": "rcAction5",
+                      "width": 200,
+                      "layout": "vertical",
+                      "gap": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "aPTEe",
+                          "fill": "#F59E0B",
+                          "content": "5.0 Estrellas (210)",
+                          "fontFamily": "$font_body",
+                          "fontSize": 14,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "ydwmI",
+                          "name": "btnR5",
+                          "width": "fill_container",
+                          "fill": "$cta",
+                          "cornerRadius": 8,
+                          "padding": [
+                            12,
+                            24
+                          ],
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "C4gDf",
+                              "fill": "$surface",
+                              "content": "Ver Perfil",
+                              "fontFamily": "$font_body",
+                              "fontSize": 14,
+                              "fontWeight": "bold"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Ewcmx",
+                  "name": "pagBox",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "padding": [
+                    32,
+                    0
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "gmdwc",
+                      "name": "pb1",
+                      "cornerRadius": 8,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$bg_border"
+                      },
+                      "padding": [
+                        8,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Y5zz1",
+                          "fill": "$text_muted",
+                          "content": "Anterior",
+                          "fontFamily": "$font_body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "AqlPV",
+                      "name": "pb2",
+                      "fill": "$brand",
+                      "cornerRadius": 8,
+                      "padding": [
+                        8,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "BeDaj",
+                          "fill": "$surface",
+                          "content": "1",
+                          "fontFamily": "$font_body",
+                          "fontSize": 14,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "mQL4J",
+                      "name": "pb3",
+                      "cornerRadius": 8,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$bg_border"
+                      },
+                      "padding": [
+                        8,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "QZJq8",
+                          "fill": "$text_primary",
+                          "content": "2",
+                          "fontFamily": "$font_body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tks0E",
+                      "name": "pb4",
+                      "cornerRadius": 8,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$bg_border"
+                      },
+                      "padding": [
+                        8,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "NqRzQ",
+                          "fill": "$text_primary",
+                          "content": "3",
+                          "fontFamily": "$font_body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "pQFtP",
+                      "name": "pb5",
+                      "cornerRadius": 8,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$bg_border"
+                      },
+                      "padding": [
+                        8,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Dqvcn",
+                          "fill": "$text_primary",
+                          "content": "Siguiente",
+                          "fontFamily": "$font_body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "NPeDz",
+          "name": "fRes",
+          "width": "fill_container",
+          "fill": "$brand",
+          "padding": [
+            64,
+            120
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "XU02n",
+              "name": "fLeft",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "NbbPs",
+                  "fill": "$surface",
+                  "content": "Vitalis",
+                  "fontFamily": "$font_heading",
+                  "fontSize": 24,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "74qzk",
+                  "fill": "#ffffffb3",
+                  "content": "Directorio Médico de Comodoro Rivadavia.\nPróximamente en San Juan.",
+                  "fontFamily": "$font_body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "bg_border": {
+      "type": "color",
+      "value": "#E5E7EB"
+    },
+    "bg_light": {
+      "type": "color",
+      "value": "#F9FAFB"
+    },
+    "brand": {
+      "type": "color",
+      "value": "#0F2D5E"
+    },
+    "cta": {
+      "type": "color",
+      "value": "#00C896"
+    },
+    "font_body": {
+      "type": "string",
+      "value": "DM Sans"
+    },
+    "font_heading": {
+      "type": "string",
+      "value": "Playfair Display"
+    },
+    "surface": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "text_muted": {
+      "type": "color",
+      "value": "#9CA3AF"
+    },
+    "text_primary": {
+      "type": "color",
+      "value": "#111827"
+    },
+    "text_secondary": {
+      "type": "color",
+      "value": "#4B5563"
+    }
+  }
+}
