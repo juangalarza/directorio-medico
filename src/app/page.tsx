@@ -2,8 +2,8 @@
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Card, CardContent } from "@/components/ui/card";
-import { Search, HeartPulse, MapPin, Calendar, Stethoscope, Video, CheckCircle2, Check, Star, Smile, Eye, Brain, Activity, Scan, User as UserIcon, ArrowUpRight } from "lucide-react";
+import { Card } from "@/components/ui/card";
+import { Search, HeartPulse, MapPin, Calendar, CheckCircle2, Check, Star, Smile, Eye, Brain, Activity, Scan, User as UserIcon, ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -543,8 +543,8 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-full overflow-hidden shadow-inner">
-                      <img src={t.img} alt={t.name} className="w-full h-full object-cover" />
+                    <div className="w-12 h-12 rounded-full overflow-hidden shadow-inner relative">
+                      <Image src={t.img} alt={t.name} fill className="object-cover" />
                     </div>
                     <div className="text-left">
                       <h4 className="font-bold text-[#0F2D5E] text-base">{t.name}</h4>
