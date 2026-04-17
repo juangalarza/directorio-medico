@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { DM_Sans, Playfair_Display } from "next/font/google";
+import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Navbar } from "@/components/shared/navbar";
 import { Footer } from "@/components/shared/footer";
 
-const dmSans = DM_Sans({ subsets: ["latin"], variable: "--font-sans" });
-const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-serif" });
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
+const plusJakarta = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font-serif" });
 
 export const metadata: Metadata = {
   title: "Vitalis | Directorio Médico Comodoro",
@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className={cn("font-sans", dmSans.variable, playfair.variable)}>
+    <html lang="es" className={cn("font-sans", inter.variable, plusJakarta.variable)}>
       <body className="antialiased min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-grow">

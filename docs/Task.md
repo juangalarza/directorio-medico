@@ -6,11 +6,11 @@ Marcaremos las tareas con `[ ]` (pendientes), `[/]` (en progreso), y `[x]` (comp
 ## 🚀 Fase 1: MVP (Semanas 1–3)
 **Objetivo:** Setup inicial, base de datos completa, autenticación, landing public y dashboard base.
 
-- [ ] **Setup Inicial**
-  - [ ] Inicializar proyecto Next.js 14+ (App Router).
-  - [ ] Configurar Tailwind CSS + shadcn/ui.
-  - [ ] Configurar variables de entorno iniciales (Supabase, Vercel).
-  - [ ] Integrar TypeScript estricto.
+- [x] **Setup Inicial**
+  - [x] Inicializar proyecto Next.js 14+ (App Router).
+  - [x] Configurar Tailwind CSS + shadcn/ui.
+  - [x] Configurar variables de entorno iniciales (Supabase, Vercel).
+  - [x] Integrar TypeScript estricto.
 
 - [ ] **Base de Datos (Supabase)**
   - [ ] Crear tabla `cities`.
@@ -35,10 +35,10 @@ Marcaremos las tareas con `[ ]` (pendientes), `[/]` (en progreso), y `[x]` (comp
   - [ ] Construir página `/login`.
 
 - [ ] **Desarrollo Público (Frontend de Buscador)**
-  - [ ] Crear Landing Page (`/`) con estética definida (hero, cómo funciona, especialidades destacadas, métricas).
+  - [x] Crear Landing Page (`/`) con estética definida (hero, cómo funciona, especialidades destacadas, métricas).
   - [ ] Construir `/buscar` (Motor de búsqueda con filtros ciudad, especialidad, etc).
   - [ ] Desarrollar `/medico/[slug]` (Perfil público estilizado, todavía sin turno online activo).
-  - [ ] Implementar componente NavBar / Footer estándar.
+  - [x] Implementar componente NavBar / Footer estándar.
 
 - [ ] **Desarrollo Privado (Dashboard Médico MVP)**
   - [ ] Crear layout `/dashboard/`.
