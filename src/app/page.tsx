@@ -21,20 +21,20 @@ const fadeIn = {
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true, margin: "-100px" },
   transition: { duration: 0.6, ease: "easeOut" }
-};
+} as const;
 
 const staggerContainer = {
   initial: { opacity: 0 },
   whileInView: { opacity: 1 },
   viewport: { once: true, margin: "-100px" },
   transition: { staggerChildren: 0.1 }
-};
+} as const;
 
 const staggerItem = {
   initial: { opacity: 0, y: 15 },
   whileInView: { opacity: 1, y: 0 },
   transition: { duration: 0.4 }
-};
+} as const;
 
 const DOCTORS = [
   {
@@ -46,12 +46,12 @@ const DOCTORS = [
     img: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=800"
   },
   {
-    name: "Dra. Laura Gómez",
+    name: "Dr. Luis Miguel",
     spec: "Pediatría integral, desarrollo infantil y acompañamiento.",
     rating: "5.0",
     location: "Norte",
     reviews: "89",
-    img: "https://images.unsplash.com/photo-1594824436998-d8ea3ed36cc0?auto=format&fit=crop&q=80&w=800"
+    img: "https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&q=80&w=800"
   },
   {
     name: "Dr. Carlos Ruiz",
@@ -102,7 +102,7 @@ export default function Home() {
 
       {/* 1. HERO SECTION */}
       <section ref={heroRef} className="relative w-full h-[calc(100vh-5rem)] flex items-center justify-center overflow-hidden">
-        <motion.div 
+        <motion.div
           style={{ y: backgroundY }}
           className="absolute inset-0 z-0"
         >
@@ -116,11 +116,11 @@ export default function Home() {
           <div className="absolute inset-0 bg-[#0F2D5E]/85"></div>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           style={{ y: textY }}
           className="relative z-10 flex flex-col items-center max-w-5xl px-4 text-center gap-8"
         >
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -130,7 +130,7 @@ export default function Home() {
             <span className="text-white text-sm font-bold tracking-wide">EL BUSCADOR DE SALUD #1 DE COMODORO</span>
           </motion.div>
 
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
@@ -141,7 +141,7 @@ export default function Home() {
           </motion.h1>
 
           {/* Search Box */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
@@ -159,7 +159,7 @@ export default function Home() {
             </Button>
           </motion.div>
 
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1 }}
@@ -171,7 +171,7 @@ export default function Home() {
       </section>
 
       {/* 2. CÓMO FUNCIONA */}
-      <motion.section 
+      <motion.section
         {...fadeIn}
         id="como-funciona" className="py-20 md:py-28 px-4 md:px-[120px] w-full"
       >
@@ -182,7 +182,7 @@ export default function Home() {
             </h2>
             <p className="text-gray-500 text-lg max-w-2xl">Gestionar tu salud nunca fue tan simple. Tres pasos para tu bienestar.</p>
           </div>
-          <motion.div 
+          <motion.div
             variants={staggerContainer}
             initial="initial"
             whileInView="whileInView"
@@ -209,7 +209,7 @@ export default function Home() {
       </motion.section>
 
       {/* 3. ESPECIALIDADES DESTACADAS */}
-      <motion.section 
+      <motion.section
         {...fadeIn}
         id="especialidades" className="py-20 md:py-28 px-4 md:px-[120px] bg-slate-50 w-full"
       >
@@ -218,14 +218,14 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold font-serif text-[#0F2D5E]">
               Especialidades Destacadas
             </h2>
-            <Link 
-              href="/especialidades" 
+            <Link
+              href="/especialidades"
               className="inline-flex items-center justify-center bg-[#0F2D5E] hover:bg-[#0d2346] text-white rounded-full px-8 py-4 font-bold shadow-md transition-colors"
             >
               Ver todas
             </Link>
           </div>
-          <motion.div 
+          <motion.div
             variants={staggerContainer}
             initial="initial"
             whileInView="whileInView"
@@ -266,7 +266,7 @@ export default function Home() {
       </motion.section>
 
       {/* 4. MÉDICOS RECOMENDADOS & BANNER */}
-      <motion.section 
+      <motion.section
         {...fadeIn}
         id="profesionales" className="py-20 md:py-28 px-4 md:px-[120px] w-full bg-slate-50"
       >
@@ -279,7 +279,7 @@ export default function Home() {
               Ver todos los médicos
             </Button>
           </div>
-          <Carousel 
+          <Carousel
             opts={{
               align: "start",
               loop: true,
@@ -290,11 +290,11 @@ export default function Home() {
               {DOCTORS.map((doc, i) => (
                 <CarouselItem key={i} className="pl-4 md:pl-8 sm:basis-1/2 lg:basis-1/3">
                   <div className="relative overflow-hidden rounded-[32px] border-[8px] border-white shadow-sm aspect-[3/4] group bg-white">
-                    <Image 
-                      src={doc.img} 
-                      fill 
-                      alt={doc.name} 
-                      className="object-cover object-top transition-transform duration-700 group-hover:scale-105" 
+                    <Image
+                      src={doc.img}
+                      fill
+                      alt={doc.name}
+                      className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
                     />
                     <div className="absolute bottom-0 left-0 right-0 h-[60%] bg-gradient-to-t from-white via-white/90 to-transparent"></div>
                     <div className="absolute bottom-0 left-0 w-full p-6 md:p-8 flex flex-col justify-end">
@@ -326,7 +326,7 @@ export default function Home() {
             <CarouselNext className="absolute -right-4 md:-right-12 top-1/2 -translate-y-1/2 bg-white shadow-lg border-none hover:bg-slate-50 min-w-12 h-12" />
           </Carousel>
 
-          <motion.div 
+          <motion.div
             whileHover={{ scale: 1.01 }}
             className="w-full h-32 md:h-40 relative rounded-2xl overflow-hidden mt-8"
           >
@@ -347,21 +347,21 @@ export default function Home() {
       </motion.section>
 
       {/* 5. PARA MÉDICOS (B2B Layout) */}
-      <motion.section 
+      <motion.section
         {...fadeIn}
         className="py-20 md:py-28 px-4 md:px-[120px] bg-[#0F2D5E] text-white w-full"
       >
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
           <div className="flex-1 w-full relative">
-            <motion.div 
-              whileInView={{ x: [ -20, 0 ], opacity: [ 0, 1 ] }}
+            <motion.div
+              whileInView={{ x: [-20, 0], opacity: [0, 1] }}
               viewport={{ once: true }}
               className="aspect-[4/3] w-full bg-white/5 rounded-[32px] border border-white/10 backdrop-blur-md flex items-center justify-center p-8 overflow-hidden shadow-2xl relative group"
             >
-               <div className="absolute top-[-10%] right-[-10%] w-64 h-64 bg-[#00C896]/10 rounded-full blur-3xl"></div>
-               <div className="absolute bottom-[-10%] left-[-10%] w-64 h-64 bg-[#00C896]/5 rounded-full blur-3xl"></div>
-               
-               <div className="relative z-10 w-full h-full bg-white rounded-2xl shadow-2xl flex flex-col p-6 opacity-95 transition-transform group-hover:scale-[1.02] duration-500">
+              <div className="absolute top-[-10%] right-[-10%] w-64 h-64 bg-[#00C896]/10 rounded-full blur-3xl"></div>
+              <div className="absolute bottom-[-10%] left-[-10%] w-64 h-64 bg-[#00C896]/5 rounded-full blur-3xl"></div>
+
+              <div className="relative z-10 w-full h-full bg-white rounded-2xl shadow-2xl flex flex-col p-6 opacity-95 transition-transform group-hover:scale-[1.02] duration-500">
                 <div className="flex items-center justify-between mb-8">
                   <div className="h-6 w-32 bg-slate-100 rounded-full"></div>
                   <div className="h-8 w-8 bg-[#00C896]/20 rounded-full"></div>
@@ -375,7 +375,7 @@ export default function Home() {
                   <div className="w-2/3 space-y-4">
                     <div className="h-10 bg-slate-50 border border-slate-100 rounded-xl w-full"></div>
                     <div className="h-32 bg-[#00C896]/5 rounded-xl border border-[#00C896]/10 w-full flex items-center justify-center">
-                       <Activity className="w-12 h-12 text-[#00C896] opacity-30 animate-pulse" />
+                      <Activity className="w-12 h-12 text-[#00C896] opacity-30 animate-pulse" />
                     </div>
                     <div className="h-8 bg-slate-50 rounded-xl w-3/4"></div>
                   </div>
@@ -383,7 +383,7 @@ export default function Home() {
               </div>
               <div className="absolute inset-0 flex items-center justify-center z-20">
                 <div className="bg-[#0F2D5E] text-white px-8 py-3 rounded-2xl font-bold shadow-2xl border border-white/10 backdrop-blur-xl">
-                   Dashboard Médico
+                  Dashboard Médico
                 </div>
               </div>
             </motion.div>
@@ -398,8 +398,8 @@ export default function Home() {
                 "Turnos automáticos 24/7 sin secretarias",
                 "Conexión en tiempo real con Google Calendar"
               ].map((text, i) => (
-                <motion.div 
-                  key={i} 
+                <motion.div
+                  key={i}
                   initial={{ opacity: 0, x: 20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
@@ -413,7 +413,7 @@ export default function Home() {
                 </motion.div>
               ))}
             </div>
-            <motion.div 
+            <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -426,14 +426,14 @@ export default function Home() {
       </motion.section>
 
       {/* 6. PRICING */}
-      <motion.section 
+      <motion.section
         {...fadeIn}
         id="planes" className="py-20 md:py-28 px-4 md:px-[120px] bg-slate-50 w-full flex flex-col items-center"
       >
         <h2 className="text-3xl md:text-5xl font-bold font-serif text-[#0F2D5E] text-center mb-16">
           Planes pensados para vos
         </h2>
-        <motion.div 
+        <motion.div
           variants={staggerContainer}
           initial="initial"
           whileInView="whileInView"
@@ -445,8 +445,8 @@ export default function Home() {
             <Card className="flex-1 p-8 rounded-[32px] border-white/50 bg-white/80 backdrop-blur-sm shadow-sm flex flex-col relative h-[520px] transition-all hover:scale-[1.02]">
               <h3 className="text-2xl font-bold text-[#0F2D5E] mb-2 font-serif">Básico</h3>
               <div className="h-[72px] mb-8 flex items-end gap-2">
-                 <span className="text-6xl font-bold text-[#0F2D5E] leading-none">$0</span>
-                 <span className="text-lg font-medium text-gray-500 mb-1 tracking-tight">/ MES</span>
+                <span className="text-6xl font-bold text-[#0F2D5E] leading-none">$0</span>
+                <span className="text-lg font-medium text-gray-500 mb-1 tracking-tight">/ MES</span>
               </div>
               <ul className="space-y-4 text-gray-600 mb-12 flex-grow">
                 <li className="flex items-start gap-3 text-lg"><Check className="w-6 h-6 text-[#00C896] mt-0.5 shrink-0 stroke-[3]" /> <span className="font-medium">Perfil público base</span></li>
@@ -464,8 +464,8 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-bold text-white mb-2 font-serif">Premium</h3>
               <div className="h-[72px] mb-8 flex items-end gap-2">
-                 <span className="text-6xl font-bold text-white leading-none">$15</span>
-                 <span className="text-lg font-medium text-white/60 mb-1 tracking-tight">/ MES</span>
+                <span className="text-6xl font-bold text-white leading-none">$15</span>
+                <span className="text-lg font-medium text-white/60 mb-1 tracking-tight">/ MES</span>
               </div>
               <ul className="space-y-4 text-white mb-12 flex-grow">
                 <li className="flex items-start gap-3 text-lg"><Check className="w-6 h-6 text-[#00C896] mt-0.5 shrink-0 stroke-[3]" /> <span className="font-medium">Prioridad en resultados</span></li>
@@ -482,7 +482,7 @@ export default function Home() {
             <Card className="flex-1 p-8 rounded-[32px] border-white/50 bg-white/80 backdrop-blur-sm shadow-sm flex flex-col relative h-[520px] transition-all hover:scale-[1.02]">
               <h3 className="text-2xl font-bold text-[#0F2D5E] mb-2 font-serif">Clínicas</h3>
               <div className="h-[72px] mb-8 flex items-end gap-2">
-                 <span className="text-4xl font-bold text-[#0F2D5E] leading-none tracking-tight">A Medida</span>
+                <span className="text-4xl font-bold text-[#0F2D5E] leading-none tracking-tight">A Medida</span>
               </div>
               <ul className="space-y-5 text-gray-600 mb-12 flex-grow">
                 <li className="flex items-start gap-3 text-lg"><Check className="w-6 h-6 text-[#00C896] mt-0.5 shrink-0 stroke-[3]" /> <span className="font-medium">Múltiples profesionales</span></li>
@@ -496,7 +496,7 @@ export default function Home() {
       </motion.section>
 
       {/* 7. TESTIMONIOS */}
-      <motion.section 
+      <motion.section
         {...fadeIn}
         className="py-20 md:py-28 px-4 md:px-[120px] w-full text-center"
       >
@@ -507,7 +507,7 @@ export default function Home() {
             </h2>
             <p className="text-gray-500 text-lg">Confianza y seguridad en cada experiencia.</p>
           </div>
-          <motion.div 
+          <motion.div
             variants={staggerContainer}
             initial="initial"
             whileInView="whileInView"
@@ -515,19 +515,19 @@ export default function Home() {
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
             {[
-              { 
+              {
                 text: "Por fin una forma fácil de conseguir turno en Comodoro. Me ahorró horas de llamadas telefónicas y esperas. 10/10.",
                 name: "María Gómez",
                 role: "Paciente verificada",
                 img: "https://i.pravatar.cc/150?img=47"
               },
-              { 
+              {
                 text: "Excelente el sistema de búsqueda. Encontré un especialista en mi obra social en segundos. Muy recomendable.",
                 name: "Ricardo Sosa",
                 role: "Paciente verificado",
                 img: "https://i.pravatar.cc/150?img=12"
               },
-              { 
+              {
                 text: "Me encanta que me llegue el recordatorio por WhatsApp. Ya no me olvido más de mis consultas médicas.",
                 name: "Elena Ruiz",
                 role: "Paciente verificada",

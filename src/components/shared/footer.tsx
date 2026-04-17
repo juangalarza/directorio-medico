@@ -23,7 +23,7 @@ export function Footer() {
           <h4 className="font-bold text-white uppercase text-xs tracking-[0.2em] mb-2 opacity-50">Legal</h4>
           <a href="#" className="text-white/70 hover:text-[#00C896] transition-all text-sm font-medium">Términos y condiciones</a>
           <a href="#" className="text-white/70 hover:text-[#00C896] transition-all text-sm font-medium">Políticas de privacidad</a>
-          <a href="#" className="text-white/70 hover:text-[#00C896] transition-all text-sm font-medium">Contacto</a>
+          <a href="/contacto" className="text-white/70 hover:text-[#00C896] transition-all text-sm font-medium">Contacto</a>
         </div>
       </div>
     </footer>
