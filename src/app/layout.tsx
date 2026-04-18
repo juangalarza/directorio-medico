@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Navbar } from "@/components/shared/navbar";
 import { Footer } from "@/components/shared/footer";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const plusJakarta = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font-serif" });
@@ -19,13 +20,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className={cn("font-sans", inter.variable, plusJakarta.variable)}>
-      <body className="antialiased min-h-screen flex flex-col">
+    <html lang="es" className={cn("font-sans", inter.variable, plusJakarta.variable, "overflow-x-hidden")}>
+      <body className="antialiased min-h-screen flex flex-col overflow-x-hidden">
         <Navbar />
         <main className="flex-grow">
           {children}
         </main>
         <Footer />
+        <SpeedInsights />
       </body>
     </html>
   );

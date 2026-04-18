@@ -288,8 +288,8 @@ export default function Home() {
           >
             <CarouselContent className="-ml-4 md:-ml-8">
               {DOCTORS.map((doc, i) => (
-                <CarouselItem key={i} className="pl-4 md:pl-8 sm:basis-1/2 lg:basis-1/3">
-                  <div className="relative overflow-hidden rounded-[32px] border-[8px] border-white shadow-sm aspect-[3/4] group bg-white">
+                <CarouselItem key={i} className="pl-4 md:pl-8 basis-[85%] sm:basis-1/2 lg:basis-1/3">
+                  <div className="relative overflow-hidden rounded-[32px] border-[6px] md:border-[8px] border-white shadow-sm aspect-[3/4] group bg-white">
                     <Image
                       src={doc.img}
                       fill
@@ -346,50 +346,49 @@ export default function Home() {
         </div>
       </motion.section>
 
-      {/* 5. PARA MÉDICOS (B2B Layout) */}
       <motion.section
         {...fadeIn}
-        className="py-20 md:py-28 px-4 md:px-[120px] bg-[#0F2D5E] text-white w-full"
+        className="py-20 md:py-28 px-6 md:px-[120px] bg-[#0F2D5E] text-white w-full overflow-hidden"
       >
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-16">
           <div className="flex-1 w-full relative">
             <motion.div
               whileInView={{ x: [-20, 0], opacity: [0, 1] }}
               viewport={{ once: true }}
-              className="aspect-[4/3] w-full bg-white/5 rounded-[32px] border border-white/10 backdrop-blur-md flex items-center justify-center p-8 overflow-hidden shadow-2xl relative group"
+              className="aspect-square md:aspect-[4/3] w-full bg-white/5 rounded-[32px] border border-white/10 backdrop-blur-md flex items-center justify-center p-3 md:p-8 overflow-hidden shadow-2xl relative group scale-[0.85] sm:scale-100"
             >
               <div className="absolute top-[-10%] right-[-10%] w-64 h-64 bg-[#00C896]/10 rounded-full blur-3xl"></div>
               <div className="absolute bottom-[-10%] left-[-10%] w-64 h-64 bg-[#00C896]/5 rounded-full blur-3xl"></div>
 
-              <div className="relative z-10 w-full h-full bg-white rounded-2xl shadow-2xl flex flex-col p-6 opacity-95 transition-transform group-hover:scale-[1.02] duration-500">
-                <div className="flex items-center justify-between mb-8">
-                  <div className="h-6 w-32 bg-slate-100 rounded-full"></div>
-                  <div className="h-8 w-8 bg-[#00C896]/20 rounded-full"></div>
+              <div className="relative z-10 w-full h-full bg-white rounded-2xl shadow-2xl flex flex-col p-4 md:p-6 opacity-95 transition-transform group-hover:scale-[1.02] duration-500 scale-95 md:scale-100">
+                <div className="flex items-center justify-between mb-4 md:mb-8">
+                  <div className="h-4 md:h-6 w-24 md:w-32 bg-slate-100 rounded-full"></div>
+                  <div className="h-6 md:h-8 w-6 md:w-8 bg-[#00C896]/20 rounded-full"></div>
                 </div>
                 <div className="flex flex-grow gap-6">
-                  <div className="w-1/3 bg-slate-50 rounded-xl space-y-3 p-3">
-                    <div className="h-4 bg-slate-200 rounded w-full"></div>
-                    <div className="h-4 bg-slate-100 rounded w-3/4"></div>
-                    <div className="h-4 bg-slate-100 rounded w-1/2"></div>
+                  <div className="w-1/3 bg-slate-50 rounded-xl space-y-2 md:space-y-3 p-2 md:p-3">
+                    <div className="h-3 md:h-4 bg-slate-200 rounded w-full"></div>
+                    <div className="h-3 md:h-4 bg-slate-100 rounded w-3/4"></div>
+                    <div className="h-3 md:h-4 bg-slate-100 rounded w-1/2"></div>
                   </div>
-                  <div className="w-2/3 space-y-4">
-                    <div className="h-10 bg-slate-50 border border-slate-100 rounded-xl w-full"></div>
-                    <div className="h-32 bg-[#00C896]/5 rounded-xl border border-[#00C896]/10 w-full flex items-center justify-center">
-                      <Activity className="w-12 h-12 text-[#00C896] opacity-30 animate-pulse" />
+                  <div className="w-2/3 space-y-3 md:space-y-4">
+                    <div className="h-8 md:h-10 bg-slate-50 border border-slate-100 rounded-xl w-full"></div>
+                    <div className="h-24 md:h-32 bg-[#00C896]/5 rounded-xl border border-[#00C896]/10 w-full flex items-center justify-center">
+                      <Activity className="w-8 md:w-12 h-8 md:h-12 text-[#00C896] opacity-30 animate-pulse" />
                     </div>
-                    <div className="h-8 bg-slate-50 rounded-xl w-3/4"></div>
+                    <div className="h-6 md:h-8 bg-slate-50 rounded-xl w-3/4"></div>
                   </div>
                 </div>
               </div>
               <div className="absolute inset-0 flex items-center justify-center z-20">
-                <div className="bg-[#0F2D5E] text-white px-8 py-3 rounded-2xl font-bold shadow-2xl border border-white/10 backdrop-blur-xl">
+                <div className="bg-[#0F2D5E] text-white px-3 md:px-8 py-2 md:py-3 rounded-[12px] md:rounded-2xl font-bold shadow-2xl border border-white/10 backdrop-blur-xl text-[10px] md:text-base">
                   Dashboard Médico
                 </div>
               </div>
             </motion.div>
           </div>
-          <div className="flex-1 flex flex-col gap-8">
-            <h2 className="text-3xl md:text-5xl font-bold font-serif leading-[1.1]">
+          <div className="flex-1 flex flex-col gap-6 md:gap-8 text-center md:text-left w-full">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold font-serif leading-[1.2] md:leading-[1.1]">
               Llevá tu consultorio al <span className="text-[#00C896]">siguiente nivel</span>
             </h2>
             <div className="space-y-6">
@@ -406,18 +405,19 @@ export default function Home() {
                   transition={{ delay: i * 0.1 + 0.3 }}
                   className="flex items-center gap-4 group"
                 >
-                  <div className="w-10 h-10 rounded-full bg-[#00C896]/10 flex items-center justify-center transition-colors group-hover:bg-[#00C896]">
+                  <div className="w-10 h-10 rounded-full bg-[#00C896]/10 flex items-center justify-center transition-colors group-hover:bg-[#00C896] shrink-0">
                     <Check className="text-[#00C896] w-6 h-6 group-hover:text-[#0F2D5E] stroke-[4]" />
                   </div>
-                  <span className="text-xl text-white/90 font-medium">{text}</span>
+                  <span className="text-lg md:text-xl text-white/90 font-medium">{text}</span>
                 </motion.div>
               ))}
             </div>
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              className="w-full flex justify-center md:justify-start"
             >
-              <Button className="bg-[#00C896] hover:bg-[#00a37b] text-white w-fit px-10 py-7 text-xl rounded-2xl font-black shadow-xl transition-all mt-4 uppercase tracking-wide">
+              <Button className="bg-[#00C896] hover:bg-[#00a37b] text-white w-full md:w-fit px-8 md:px-10 py-6 md:py-7 text-lg md:text-xl rounded-2xl font-black shadow-xl transition-all mt-4 uppercase tracking-wide whitespace-normal h-auto">
                 Registrá tu consultorio gratis
               </Button>
             </motion.div>
@@ -452,7 +452,7 @@ export default function Home() {
                 <li className="flex items-start gap-3 text-lg"><Check className="w-6 h-6 text-[#00C896] mt-0.5 shrink-0 stroke-[3]" /> <span className="font-medium">Perfil público base</span></li>
                 <li className="flex items-start gap-3 text-lg"><Check className="w-6 h-6 text-[#00C896] mt-0.5 shrink-0 stroke-[3]" /> <span className="font-medium">Visibilidad estándar</span></li>
               </ul>
-              <Button variant="outline" className="w-full text-[#0F2D5E] border-2 border-[#0F2D5E] font-bold h-14 text-lg rounded-2xl hover:bg-[#0F2D5E] hover:text-white transition-all shadow-md">Comenzar Gratis</Button>
+              <Button variant="outline" className="w-full text-[#0F2D5E] border-2 border-[#0F2D5E] font-bold h-14 text-lg rounded-2xl hover:bg-[#0F2D5E] hover:text-white transition-all shadow-md whitespace-normal">Comenzar Gratis</Button>
             </Card>
           </motion.div>
 
@@ -473,7 +473,7 @@ export default function Home() {
                 <li className="flex items-start gap-3 text-lg"><Check className="w-6 h-6 text-[#00C896] mt-0.5 shrink-0 stroke-[3]" /> <span className="font-medium">Sync con Google Calendar</span></li>
                 <li className="flex items-start gap-3 text-lg"><Check className="w-6 h-6 text-[#00C896] mt-0.5 shrink-0 stroke-[3]" /> <span className="font-medium">Sello de Verificado</span></li>
               </ul>
-              <Button className="w-full bg-[#00C896] hover:bg-[#00a37b] font-bold h-14 text-lg rounded-2xl shadow-xl text-white transition-all">Iniciar Prueba de 14 Días</Button>
+              <Button className="w-full bg-[#00C896] hover:bg-[#00a37b] font-bold h-14 text-lg rounded-2xl shadow-xl text-white transition-all whitespace-normal">Iniciar Prueba de 14 Días</Button>
             </Card>
           </motion.div>
 
@@ -489,7 +489,7 @@ export default function Home() {
                 <li className="flex items-start gap-3 text-lg"><Check className="w-6 h-6 text-[#00C896] mt-0.5 shrink-0 stroke-[3]" /> <span className="font-medium">Panel administrativo único</span></li>
                 <li className="flex items-start gap-3 text-lg"><Check className="w-6 h-6 text-[#00C896] mt-0.5 shrink-0 stroke-[3]" /> <span className="font-medium">Soporte prioritario 24/7</span></li>
               </ul>
-              <Button variant="outline" className="w-full text-[#0F2D5E] border-2 border-[#0F2D5E] font-bold h-14 text-lg rounded-2xl hover:bg-[#0F2D5E] hover:text-white transition-all shadow-md">Contactar Ventas</Button>
+              <Button variant="outline" className="w-full text-[#0F2D5E] border-2 border-[#0F2D5E] font-bold h-14 text-lg rounded-2xl hover:bg-[#0F2D5E] hover:text-white transition-all shadow-md whitespace-normal">Contactar Ventas</Button>
             </Card>
           </motion.div>
         </motion.div>

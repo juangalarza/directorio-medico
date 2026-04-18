@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export function Navbar() {
   return (
-    <header className="sticky top-0 z-50 w-full h-20 px-8 md:px-[120px] bg-white/95 backdrop-blur-sm flex items-center justify-between border-b">
+    <header className="sticky top-0 z-50 w-full h-16 md:h-20 px-4 md:px-[120px] bg-white/80 backdrop-blur-md flex items-center justify-between border-b border-slate-100 shadow-sm">
       <Link href="/" className="flex items-center">
         <span className="text-2xl font-bold text-[#0F2D5E] font-serif">Vitalis</span>
       </Link>
