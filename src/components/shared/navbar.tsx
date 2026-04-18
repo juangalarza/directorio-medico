@@ -24,9 +24,11 @@ export function Navbar() {
         <Link href="/contacto" className="text-sm font-bold text-[#0F2D5E] hover:text-[#00C896] transition-colors">
           CONTÁCTANOS
         </Link>
-        <Button className="bg-[#00C896] hover:bg-[#00a37b] text-white rounded-full px-6 font-bold text-sm tracking-wide">
-          SOY PROFESIONAL
-        </Button>
+        <Link href="/login">
+          <Button className="bg-[#00C896] hover:bg-[#00a37b] text-white rounded-full px-6 font-bold text-sm tracking-wide">
+            SOY PROFESIONAL
+          </Button>
+        </Link>
       </nav>
     </header>
   );

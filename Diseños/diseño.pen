@@ -4882,6 +4882,678 @@
           ]
         }
       ]
+    },
+    {
+      "type": "frame",
+      "id": "k0z35",
+      "x": 6400,
+      "y": 0,
+      "name": "Login Screen",
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "layout": "vertical",
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "xsItR",
+          "layoutPosition": "absolute",
+          "x": 0,
+          "y": 0,
+          "name": "loginBg",
+          "metadata": {
+            "type": "unsplash",
+            "username": "declansun",
+            "link": "https://unsplash.com/@declansun",
+            "author": "Declan Sun"
+          },
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "https://images.unsplash.com/photo-1771678040857-51d00a11be7a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzY0NzE5NzV8&ixlib=rb-4.1.0&q=80&w=1080",
+            "mode": "fill"
+          },
+          "width": 1440,
+          "height": 900
+        },
+        {
+          "type": "rectangle",
+          "id": "5nwIM",
+          "layoutPosition": "absolute",
+          "x": 0,
+          "y": 0,
+          "name": "overlayLogin",
+          "opacity": 0.6,
+          "fill": "#0F2D5E",
+          "width": 1440,
+          "height": 900
+        },
+        {
+          "type": "frame",
+          "id": "x08YB",
+          "name": "Login Card",
+          "width": 480,
+          "fill": "$surface",
+          "cornerRadius": 24,
+          "layout": "vertical",
+          "gap": 32,
+          "padding": 48,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "t2cZD",
+              "name": "logoCont",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "xQYGS",
+                  "name": "logoCircle",
+                  "fill": "$brand",
+                  "width": 40,
+                  "height": 40
+                },
+                {
+                  "type": "text",
+                  "id": "Fo31x",
+                  "name": "logoText",
+                  "fill": "$brand",
+                  "content": "Vitalis",
+                  "fontFamily": "$font_heading",
+                  "fontSize": 24,
+                  "fontWeight": "Bold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "OoR5u",
+              "name": "titleSec",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "92GDb",
+                  "name": "loginTitle",
+                  "fill": "$text_primary",
+                  "content": "Bienvenido de nuevo",
+                  "textAlign": "center",
+                  "fontFamily": "$font_heading",
+                  "fontSize": 32,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "9Qo9l",
+                  "name": "loginSub",
+                  "fill": "$text_secondary",
+                  "content": "Ingresa tus credenciales para acceder",
+                  "textAlign": "center",
+                  "fontFamily": "$font_body",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "7FeXu",
+              "name": "formSec",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "KpUQt",
+                  "name": "emailCont",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "bC0Ky",
+                      "name": "emailLabel",
+                      "fill": "$text_primary",
+                      "content": "Correo Electrónico",
+                      "fontFamily": "$font_body",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "oDg9s",
+                      "name": "emailInput",
+                      "width": "fill_container",
+                      "height": 56,
+                      "cornerRadius": 12,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$bg_border"
+                      },
+                      "padding": [
+                        0,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "qsZfh",
+                          "name": "emailPlaceholder",
+                          "fill": "$text_muted",
+                          "content": "ejemplo@correo.com",
+                          "fontFamily": "$font_body",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "0nQKa",
+                  "name": "passCont",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "CZxqx",
+                      "name": "passLabel",
+                      "fill": "$text_primary",
+                      "content": "Contraseña",
+                      "fontFamily": "$font_body",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "VCdnH",
+                      "name": "passInput",
+                      "width": "fill_container",
+                      "height": 56,
+                      "cornerRadius": 12,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$bg_border"
+                      },
+                      "padding": [
+                        0,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "YNocL",
+                          "name": "passPlaceholder",
+                          "fill": "$text_muted",
+                          "content": "••••••••",
+                          "fontFamily": "$font_body",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "ugTT0",
+                  "name": "forgotPass",
+                  "fill": "$brand",
+                  "content": "¿Olvidaste tu contraseña?",
+                  "textAlign": "right",
+                  "fontFamily": "$font_body",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "WlZL1",
+              "name": "loginBtn",
+              "width": "fill_container",
+              "height": 56,
+              "fill": "$cta",
+              "cornerRadius": 12,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "dnEXF",
+                  "name": "loginBtnText",
+                  "fill": "#FFFFFF",
+                  "content": "Iniciar Sesión",
+                  "fontFamily": "$font_body",
+                  "fontSize": 16,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "J0k0Q",
+              "name": "footerText",
+              "fill": "$text_secondary",
+              "content": "¿No tienes una cuenta? Regístrate",
+              "textAlign": "center",
+              "fontFamily": "$font_body",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "otjoA",
+      "x": 8000,
+      "y": 0,
+      "name": "Register Screen",
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "layout": "vertical",
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "bG1BP",
+          "layoutPosition": "absolute",
+          "x": 0,
+          "y": 0,
+          "name": "registerBg",
+          "metadata": {
+            "type": "unsplash",
+            "username": "introspectivedsgn",
+            "link": "https://unsplash.com/@introspectivedsgn",
+            "author": "Erik Mclean"
+          },
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "https://images.unsplash.com/photo-1631507623442-fee09e89c6a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzY0NzE5NzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+            "mode": "fill"
+          },
+          "width": 1440,
+          "height": 900
+        },
+        {
+          "type": "rectangle",
+          "id": "2zVkp",
+          "layoutPosition": "absolute",
+          "x": 0,
+          "y": 0,
+          "name": "overlayRegister",
+          "opacity": 0.6,
+          "fill": "#0F2D5E",
+          "width": 1440,
+          "height": 900
+        },
+        {
+          "type": "frame",
+          "id": "pH3Mf",
+          "name": "Register Card",
+          "width": 520,
+          "fill": "$surface",
+          "cornerRadius": 24,
+          "layout": "vertical",
+          "gap": 24,
+          "padding": 48,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "XFFN5",
+              "name": "logoContReg",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "3DU2t",
+                  "name": "logoCircleReg",
+                  "fill": "$brand",
+                  "width": 40,
+                  "height": 40
+                },
+                {
+                  "type": "text",
+                  "id": "6vsEj",
+                  "name": "logoTextReg",
+                  "fill": "$brand",
+                  "content": "Vitalis",
+                  "fontFamily": "$font_heading",
+                  "fontSize": 24,
+                  "fontWeight": "Bold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "hkiJV",
+              "name": "titleSecReg",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Iafys",
+                  "name": "registerTitle",
+                  "fill": "$text_primary",
+                  "content": "Crea tu cuenta",
+                  "textAlign": "center",
+                  "fontFamily": "$font_heading",
+                  "fontSize": 32,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "IcaUD",
+                  "name": "registerSub",
+                  "fill": "$text_secondary",
+                  "content": "Únete a la plataforma médica líder",
+                  "textAlign": "center",
+                  "fontFamily": "$font_body",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "32uaW",
+              "name": "formSecReg",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "FYQSo",
+                  "name": "nameCont",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "F42sj",
+                      "name": "nameLabel",
+                      "fill": "$text_primary",
+                      "content": "Nombre Completo",
+                      "fontFamily": "$font_body",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "nh0zi",
+                      "name": "nameInput",
+                      "width": "fill_container",
+                      "height": 48,
+                      "cornerRadius": 12,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$bg_border"
+                      },
+                      "padding": [
+                        0,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "cwCtA",
+                          "name": "namePlaceholder",
+                          "fill": "$text_muted",
+                          "content": "Tu nombre completo",
+                          "fontFamily": "$font_body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "JZeqv",
+                  "name": "emailRegCont",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "4CrGS",
+                      "name": "emailRegLabel",
+                      "fill": "$text_primary",
+                      "content": "Correo Electrónico",
+                      "fontFamily": "$font_body",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "pS856",
+                      "name": "emailRegInput",
+                      "width": "fill_container",
+                      "height": 48,
+                      "cornerRadius": 12,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$bg_border"
+                      },
+                      "padding": [
+                        0,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "OOZyw",
+                          "name": "emailRegPlaceholder",
+                          "fill": "$text_muted",
+                          "content": "ejemplo@correo.com",
+                          "fontFamily": "$font_body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "d3LaH",
+                  "name": "pass1Cont",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "7igAk",
+                      "name": "pass1Label",
+                      "fill": "$text_primary",
+                      "content": "Contraseña",
+                      "fontFamily": "$font_body",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "sCvLl",
+                      "name": "pass1Input",
+                      "width": "fill_container",
+                      "height": 48,
+                      "cornerRadius": 12,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$bg_border"
+                      },
+                      "padding": [
+                        0,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "CglfM",
+                          "name": "pass1Placeholder",
+                          "fill": "$text_muted",
+                          "content": "••••••••",
+                          "fontFamily": "$font_body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "7YgIe",
+                  "name": "roleSec",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "mKkQE",
+                      "name": "roleLabel",
+                      "fill": "$text_primary",
+                      "content": "¿Eres Paciente o Médico?",
+                      "fontFamily": "$font_body",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "4eKwH",
+                      "name": "roleOptions",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "WABfh",
+                          "name": "optPatient",
+                          "width": "fill_container",
+                          "height": 48,
+                          "fill": "#F0FDF4",
+                          "cornerRadius": 12,
+                          "stroke": {
+                            "thickness": 2,
+                            "fill": "$cta"
+                          },
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "s7lWA",
+                              "name": "optPatientText",
+                              "fill": "$cta",
+                              "content": "Paciente",
+                              "fontFamily": "$font_body",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "3Q3Ai",
+                          "name": "optDoctor",
+                          "width": "fill_container",
+                          "height": 48,
+                          "cornerRadius": 12,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$bg_border"
+                          },
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "PcpUj",
+                              "name": "optDoctorText",
+                              "fill": "$text_secondary",
+                              "content": "Médico",
+                              "fontFamily": "$font_body",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "xErUE",
+              "name": "regBtn",
+              "width": "fill_container",
+              "height": 56,
+              "fill": "$cta",
+              "cornerRadius": 12,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "k9FE3",
+                  "name": "regBtnText",
+                  "fill": "#FFFFFF",
+                  "content": "Crear Cuenta",
+                  "fontFamily": "$font_body",
+                  "fontSize": 16,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "VOLMK",
+              "name": "footerTextReg",
+              "fill": "$text_secondary",
+              "content": "¿Ya tienes una cuenta? Inicia Sesión",
+              "textAlign": "center",
+              "fontFamily": "$font_body",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
     }
   ],
   "variables": {
